@@ -25,6 +25,15 @@ body {
   width: 30px;
 }
 
+.foto-perfil {
+  transition: 0.3s;
+  cursor: pointer;
+}
+.foto-perfil:hover {
+  box-shadow: #02d08f 1px 1px 10px 2px;
+  transform: scale(1.04);
+}
+
 .cartao .minhas-informacoes {
   padding-top: 20px;
   display: flex;
@@ -41,6 +50,12 @@ body {
 
 .cartao .minhas-informacoes .nome {
   font-size: 26px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.cartao .minhas-informacoes .nome:hover {
+  color: #d8eef7;
+  transform: scale(1.02);
 }
 
 .cartao .minhas-informacoes .cargo {
@@ -75,6 +90,7 @@ body {
 
 .cartao .abas .aba:hover {
   background-color: #414141;
+  transition: 0.5s;
 }
 
 .informacoes-abas .informacao {
@@ -91,6 +107,7 @@ body {
   font-size: 22px;
   margin-bottom: 25px;
   text-align: center;
+  color: #de5bda;
 }
 
 .informacoes-abas .descricao {
@@ -102,12 +119,13 @@ body {
 
 .informacoes-abas .descricao span {
   color: #02d08f;
+  cursor: pointer;
 }
 
 .redes-sociais {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 10px;
   align-items: center;
   max-height: 180px;
   overflow-y: auto;
@@ -118,13 +136,16 @@ body {
   display: block;
   color: #f3f3f3;
   text-align: center;
-  padding: 10px;
+  padding: 5px;
   font-size: 20px;
-  transition: opacity 0.3s ease-in-out;
+  transition: 0.3s;
+  border-radius: 20px;
 }
 
 .redes-sociais li a:hover {
   opacity: 0.8;
+  transform: scale(1.02);
+  color: rgb(32, 32, 32);
 }
 
 .redes-sociais .curriculo {
